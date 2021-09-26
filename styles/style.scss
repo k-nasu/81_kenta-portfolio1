@@ -1,0 +1,39 @@
+// スマートフォン
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/appear";
+@import "modules/hero-slider";
+@import "modules/text-animation";
+@import "modules/image-slide";
+@import "modules/button";
+@import "modules/mobile-menu";
+@import "breakpoints/base";
+
+// スマートフォン用ランドスケイプ
+@media screen and (min-width: 480px) {
+    @import 'breakpoints/480up';
+}
+
+// タブレット（iPad）
+@media screen and (min-width: 600px) {
+    @import 'breakpoints/600up';
+}
+
+// タブレット用ランドスケイプ
+@media screen and (min-width: 960px) {
+    @import 'breakpoints/960up';
+}
+
+// PC
+@media screen and (min-width: 1280px) {
+    @import 'breakpoints/1280up';
+}
+
+@media (min-resolution: 192dpi),
+            (-webkit-min-device-pixel-ratio: 2) {
+                @import "breakpoints/2x";
+            }
+
+@media print {
+    @import "breakpoints/print";
+}
